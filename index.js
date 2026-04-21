@@ -61,7 +61,7 @@ const httpServer = http.createServer((req, res) => {
 
 const wss = new WebSocket.Server({ server: httpServer });
 const uuid = UUID.replace(/-/g, "");
-const DNS_SERVERS = ['8.8.4.4', '1.1.1.1'];
+const DNS_SERVERS = ['223.5.5.5', '8.8.4.4', '1.1.1.1'];
 // Custom DNS
 function resolveHost(host) {
   return new Promise((resolve, reject) => {
